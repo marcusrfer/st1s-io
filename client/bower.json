@@ -1,0 +1,11 @@
+{
+  "name": "st-1-s-io",
+  "version": "0.0.1",
+  "dependencies": {
+    "appfy": "latest",
+    "appfy-error": "latest"
+  },
+  "resolutions": {
+    "angular": "~1.5.3"
+  }
+}

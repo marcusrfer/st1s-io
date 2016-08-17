@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="st1s-io" ng-controller="$AppCtrl as $app">
+
+	{% if page.url != "/" %}
+	    {% include head.html %}
+	{% else %}
+		{% include head.index.html %}
+	{% endif %}
+
+
+<body>
+
+	{% if page.url == "/" %}
+	    {% include header.html %}
+	{% endif %}
+
+    {{ content }}
+
+	{% if page.url != "/" %}
+	    {% include footer.html %}
+	{% else %}
+		{% include footer.index.html %}
+	{% endif %}
+
+</body>
+</html>

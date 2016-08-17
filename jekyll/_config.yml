@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+
+title: $ st1s name StewanPacheco
+email: hi@st1s.io
+description: > 
+  Javascript Software Engineer that works with angular, node, html5, css, firebase, mongo.db and all involving open source culture.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://st1s.io" # the base hostname & protocol for your site
+twitter_username: st1s
+github_username:  st1s
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+paginate: 4
+
+gems:
+  - jekyll-paginate
