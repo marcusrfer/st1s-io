@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 
-title: st1s name Stewan-Pacheco
+title: st1s.io
 email: hi@st1s.io
 description: > 
   Javascript Software Engineer that works with angular, node, html5, css, firebase, mongo.db and all involving open source culture.
@@ -14,7 +14,7 @@ github_username:  st1s
 markdown: kramdown
 theme: minima
 
-paginate: 4
+paginate: 8
 
 gems:
   - jekyll-paginate
