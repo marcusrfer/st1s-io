@@ -1,7 +1,7 @@
-<section class="hero is-primary is-medium">
+<section class="hero categories is-primary is-bold is-medium">
     <!-- Hero header: will stick at the top -->
     <div class="hero-head">
-
+        {% include nav.html logo='st1s-logo-h-green.svg' %}
     </div>
 
     <!-- Hero content: will be in the middle -->
@@ -28,4 +28,28 @@
             </div>
         </nav>
     </div>
+    <style>
+    .hero.categories .tabs {
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            line-height: 24px;
+            overflow: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }
+    @media (min-width: 1180px) {
+        .hero.categories .tabs.is-boxed .container {
+            max-width: 1200px;
+        }
+    }
+    @media (min-width: 980px) {}
+    </style>
 </section>
