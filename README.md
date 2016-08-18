@@ -3,7 +3,7 @@
 
 Built using [Appfy](https://appfy.org) to generate some web components and use with Jekyll.
 
-# Require
+# Requirements
 - [Appfy](https://appfy.org)
 - [Jekyll](https://jekyllrb.com)
 
