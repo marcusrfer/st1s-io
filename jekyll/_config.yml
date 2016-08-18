@@ -20,5 +20,26 @@ gems:
   - jekyll-paginate
 
 colors:
-  category: angular
-  
+  - category: "angularjs"
+    colorClass: "is-danger"
+    name: "angular.js"
+    
+  - category: "node"
+    colorClass: "is-success"
+    name: "node.js"
+
+  - category: "howto"
+    colorClass: "is-warning is-bold"
+    name: "how-to"
+
+  - category: "community"
+    colorClass: "is-info"
+    name: "community"
+
+  - category: "test"
+    colorClass: "is-primary"
+    name: "unit test"
+
+  - category: "github"
+    colorClass: "is-dark"
+    name: "github"

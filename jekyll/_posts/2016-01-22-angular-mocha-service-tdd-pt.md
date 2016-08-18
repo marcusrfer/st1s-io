@@ -3,6 +3,7 @@ layout: post
 title:  "Como realizar teste unitário de serviço com Mocha.js e Angular.js"
 subtitle: "Guia simples para entendimento sobre testes unitários"
 date:   2016-01-22
+category: test
 categories: [angularjs, mocha]
 tags: [angularjs, mocha, unit test, tdd]
 featured: true

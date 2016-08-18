@@ -3,6 +3,7 @@ layout: post
 title:  "Sirva seu blog com Github Pages Like a Kyller"
 subtitle: "Parte 2: O que é Jekyll? Entenda como funciona"
 date:   2014-12-14
+category: github
 categories: [github, jekyll]
 tags: [featured, github, jekyll]
 featured: false

@@ -3,6 +3,7 @@ layout: post
 title:  "Dashboard com Angular.js, Morris.js e Google Material Light"
 subtitle: "Como criar uma simples dashboard utilizando estas tecnologias"
 date:   2016-02-03
+category: howto
 categories: [angularjs]
 tags: [angularjs, morrisjs, charts]
 featured: false
@@ -96,8 +97,6 @@ Criaremos o módulo principal da nossa aplicação em angular, adicionando como 
     angular.module('my.app', ['angular.morris-chart']);    
 })();
 ``` 
-
----
 
 ## Serviço API
 Como o objetivo do post é apenas demonstrar a utlização do MDL com Angular e Morris, também pra não ficar muito longo e cansativo, não irei desenvolver a parte do backend.
@@ -237,9 +236,6 @@ Arquivo `app/dashboard.controller.js`
     }]);
 })();
 ```
-
-
----
 
 ## Template
 O bacana é que de cara o Google já lançou [vários templates](http://getmdl.io/templates/) de exemplo, vamos escolher o [modelo Dashboard](http://getmdl.io/templates/dashboard/index.html) para trabalharmos em cima dele.
@@ -382,8 +378,6 @@ Este é o resultado final
 <iframe width="100%" height="500" src="//jsfiddle.net/stewones/48p9wy40/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
-
----
 
 - [Repositório](https://github.com/stewones/angular-mdl-morris-dashboard) deste post no Github
 - [Repositório](https://github.com/google/material-design-lite/tree/master/templates/dashboard) do tema

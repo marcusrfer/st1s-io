@@ -3,13 +3,13 @@ layout: post
 title:  "How to unit test service with Mocha.js and Angular.js"
 subtitle: "Simple guide for understand unit test easier"
 date:   2016-01-22
+category: test
 categories: [angularjs, mocha]
 tags: [angularjs, mocha, unit test, tdd]
 featured: true
 image: false
 comments: true
 description: Today i am excited to talk about service unit test with mocha.js. For this post our service should be able work within the node and also in browser through the same code.
-heroClass: "is-danger is-bold"
 ---
 
 Hello devs,

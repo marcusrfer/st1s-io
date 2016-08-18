@@ -3,6 +3,7 @@ layout: post
 title:  "Angular.js module for Morris.js reaches 100 stars at Github"
 subtitle: ""
 date:   2016-01-27
+category: angularjs
 categories: [angularjs]
 tags: [angularjs, morrisjs, charts]
 featured: false
@@ -24,9 +25,7 @@ But over the time people were asking for more and more features, making me pay m
 It was worth. Today the project has 117 stars, 41 forks, 76 commits, 5 releases e 22 issues solved. If you likes and wanna to [contribute](https://github.com/stewones/angular-morris-chart/blob/master/CONTRIBUTING.md), just [star](https://github.com/stewones/angular-morris-chart/) it \o/ make a [fork](https://github.com/stewones/angular-morris-chart) and help us in this battle (=
 
 
----
-
-### Working sample
+## Working sample
 
 <iframe width="100%" height="510" src="//jsfiddle.net/stewones/n6aaLckb/embedded/result,html,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <iframe width="100%" height="510" src="//jsfiddle.net/stewones/zwb207md/embedded/result,html,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -36,13 +35,14 @@ It was worth. Today the project has 117 stars, 41 forks, 76 commits, 5 releases 
 - Module documentation: [http://angular-morris-chart.stpa.co/](http://angular-morris-chart.stpa.co/)
 - Morris documentation: [http://morrisjs.github.io/morris.js/](http://morrisjs.github.io/morris.js/)
 
-## Top Contributors
+--
 
-[<img alt="stewones" src="https://avatars.githubusercontent.com/u/719763?v=3&s=117" width="117">](https://github.com/stewones) |[<img alt="venkatramachandran" src="https://avatars.githubusercontent.com/u/4744258?v=3&s=117" width="117">](https://github.com/venkatramachandran) |[<img alt="rolaveric" src="https://avatars.githubusercontent.com/u/960670?v=3&s=117" width="117">](https://github.com/rolaveric) |
-:---: |:---: |:---: |
+### Top Contributors
 
----
+| [st1s](https://github.com/stewones) | [venkatrama](https://github.com/venkatramachandran)  | [rolaveric](https://github.com/rolaveric)  |
+|---|---|---|
+| [<img alt="stewones" src="https://avatars.githubusercontent.com/u/719763?v=3&s=117" width="117">](https://github.com/stewones)   | [<img alt="venkatramachandran" src="https://avatars.githubusercontent.com/u/4744258?v=3&s=117" width="117">](https://github.com/venkatramachandran)  |  [<img alt="rolaveric" src="https://avatars.githubusercontent.com/u/960670?v=3&s=117" width="117">](https://github.com/rolaveric) |
+
+--
 
 - [Post em português](/angularjs/2016/01/27/angular-morris-chart-conquista-100-stars-no-github.html)
-
----

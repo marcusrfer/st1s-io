@@ -1,16 +1,15 @@
-{% include color.html %}
-{% for color in site.colors %}
-asf
-{{ color.category }}
-{% endfor %}
 <div class="card">
     <div class="card-image">
         <figure class="image">
+            {% if include.post.image %}
             <div class="picture" style="background-image: url({{ include.post.image }})"></div>
             <img class="is-hidden" src="{{ include.post.image }}" alt="">
+            {% else %}           
+            <div class="picture" style="background-image: url(/static/images/st1s-logo.svg); background-size: contain;"></div>
+            {% endif %}          
         </figure>
     </div>
-    <div class="card-content {{ include.post.heroClass }} {% if include.post.heroClass == null %}is-primary is-bold{% endif %} is-outlined">
+    <div class="card-content {% include color.html category=include.post.category %} is-outlined">
         <div class="media">
             <div class="media-content">
                 <p class="title is-3">{{ include.post.title }}</p>
@@ -20,15 +19,19 @@ asf
 
         <div class="content">
             <div class="desc">
-                {{ include.post.description }}
+                {{ include.post.description | strip_html | truncatewords: 20 }}
             </div>
-            <small>{{ include.post.date | date: "%b %-d, %Y"}}</small>
+            <p>
+                <small class="pull-left">{{ include.post.date | date: "%b %-d, %Y"}}</small>
+                <small class="pull-right">{% include color.category.html category=include.post.category %}</small>
+            </p>
+            <br />
         </div>
     </div>
     <style>
         .card {
             max-width: 280px;
-            margin: 0 auto;
+            max-height: 495px;
         }
         
         .card .card-content {

@@ -3,6 +3,7 @@ layout: post
 title:  "Sirva seu blog com GitHub Pages Like a Kyller"
 subtitle: "Parte 3: Conheça o CloudFlare"
 date:   2014-12-22
+category: github
 categories: [github, jekyll, cloudflare]
 tags: [featured, github, jekyll, cloudflare]
 featured: false
@@ -11,11 +12,11 @@ comments: true
 description: CloudFlare é uma plataforma como serviço (SAAS) que age como um proxy entre o visitante e o servidor, dando mais velocidade e segurança ao site.
 ---
 
-#O que é CloudFlare?
+# O que é CloudFlare?
 
 CloudFlare é uma plataforma como serviço (SAAS) que age como um proxy entre o visitante e o servidor, dando mais velocidade e segurança ao site. Além da proteção contra scripts maliciosos, você economiza banda e reduz drasticamente o tempo de carregamento das páginas.
 
-#Como o CloudFlare funciona?
+# Como o CloudFlare funciona?
 
 Uma vez que os name servers estiverem corretamente configurados, CloudFlare irá gerenciar o tráfego do seu domínio além de limpar e acelerar todos acessos. Com uma rede composta de 30+ [Data Centers](https://www.cloudflare.com/network-map) pelo mundo, CloudFlare irá te ajudar em:
 
@@ -25,7 +26,7 @@ Uma vez que os name servers estiverem corretamente configurados, CloudFlare irá
 
 - Cachear o conteúdo estático - Com exceção do html, CloudFlare faz o cache de todo o conteúdo (imagens, javascript e css);
 
-#Vantagens de se usar CloudFlare
+# Vantagens de se usar CloudFlare
 
 Existem muitas vantagens de se usar o serviço do CloudFlare. Irei citar algumas:
 
@@ -45,7 +46,7 @@ Existem muitas vantagens de se usar o serviço do CloudFlare. Irei citar algumas
 
 - Suporte SSL - CloudFlare suporta SSL além de possuir um ótimo nível gratuito através do [Universal SSL](https://www.cloudflare.com/ssl)
 
-#Conclusão
+# Conclusão
 
 Acredito que [GitHub Pages](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html) + [Jekyll](https://stpa.co/github/jekyll/2014/12/14/sirva-seu-blog-com-github-pages-like-a-kyller-part-2.html) + CloudFlare seja uma ótima stack para produzir aplicações como um "Kyller" hahaha.
 

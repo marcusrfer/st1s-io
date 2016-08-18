@@ -3,6 +3,7 @@ layout: post
 title:  "5 erros de padrão ao desenvolver com Angular.js"
 subtitle: "Dicas para iniciantes em Angular"
 date:   2014-12-23
+category: angularjs
 categories: [angularjs]
 tags: [angularjs]
 featured: false

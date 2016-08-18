@@ -3,6 +3,7 @@ layout: post
 title:  "Sirva seu blog com GitHub Pages Like a Kyller"
 subtitle: "Parte 1: Conceitos, prós e contras"
 date:   2014-12-12
+category: github
 categories: [github, jekyll]
 tags: [featured, github, jekyll]
 featured: false
