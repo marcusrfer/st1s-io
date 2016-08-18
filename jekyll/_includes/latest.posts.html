@@ -1,0 +1,16 @@
+<section class="section">
+    <div class="container">
+        <br />
+        <h1 class="title is-2">$ Latest Posts</h1>
+        <br /><br />
+        <div class="columns is-mobile is-multiline">
+            {% for post in paginator.posts %}
+            <div class="column post">
+                <a href="{{ site.url }}{{ post.url }}">
+                {% include card.html post=post %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

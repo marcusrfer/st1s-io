@@ -2,15 +2,6 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.post .card {
-    max-width: 280px;
-    margin: 0 auto;
-}
-
-.post .card .card-content .title + .subtitle {
-    margin-top: 0;
-}
-
 .title.is-4 {
     line-height: 29px;
 }
@@ -19,12 +10,70 @@
     line-height: 20px;
 }
 
-.post .card .card-content .desc {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 12px;
-    padding-bottom: 16px;
+.post-content p, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content ul, .post-content ol, .post-content .tags, .post-content iframe, .post-content .button-post {
+    width: auto;
+    max-width: 50rem;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 1.25rem;
+    margin: 1.875rem auto 1.875rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    letter-spacing: .01rem;
 }
 
+.post-content pre {
+    background-color: #333;
+    width: 100%;
+    padding: 2.50rem 0;
+    color: #eee;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    width: auto;
+    max-width: 50rem;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+}
+
+.post-content img {
+    margin: 20px auto;
+    display: inherit;
+}
+
+.post-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.post-content iframe {
+    width: 100%
+}
+
+.post-content ul li { list-style-type: square }
+
+@media (max-width: 769px) {
+    .post-content img {
+        max-width: 113%;
+        left: -18px;
+        top: 5px;
+        position: relative
+    }
+}
 
 .heart {
     margin: 0 5px;

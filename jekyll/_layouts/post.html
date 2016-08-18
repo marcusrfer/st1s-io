@@ -6,11 +6,11 @@
 		{% include head.index.html %}
 	{% endif %}
 <body>
-	{% if page.url == "/" %}
-	    {% include header.html %}
-	{% endif %}
-
-    {{ content }}
+    {% include hero.post.html post=page %}
+   
+    <section class="section post-content">
+        {{ content }}
+    </section>
 
 	{% if page.url != "/" %}
 	    {% include footer.html %}

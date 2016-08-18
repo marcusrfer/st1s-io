@@ -2,33 +2,6 @@
 layout: default
 ---
 
-<section class="section">
-  <div class="container">
-    <br />
-    <h1 class="title is-2">$ Latest Posts</h1>
-    <br /><br />
-    <div class="columns is-mobile is-multiline">
-      {% for post in paginator.posts %}
-      <div class="column post">
-        {% include card.html post=post %}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+{% include latest.posts.html %}
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <nav class="pagination" role="navigation">
-        {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older</a> {% endif %}
-        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.previous_page
-        %} {% if paginator.page == 2 %}
-        <a class="older-posts" href="/">Recently &rarr;</a> {% else %}
-        <a class="older-posts" href="/page{{paginator.previous_page}}">Recently &rarr;</a> {% endif %} {% endif %}       
-      </nav>
-    </div>
-  </div>
-</footer>
+{% include paginate.html %}

@@ -1,10 +1,41 @@
 <footer class="footer">
     <div class="container">
         <div class="content">
-            <p class="is-pulled-left" >
-                <span>Built with</span> <span class="heart"></span> <span>using</span> <a href="https://github.com/Appfy">Appfy</a> & <a href="https://jekyllrb.com/">Jekyll</a>
-            </p>
-            <p class="is-pulled-right" >Subscribe <a href="/feed.xml">via RSS</a></p>
+            <div class="is-pulled-left">
+                <p>
+                    <span>Built with</span> <span class="heart"></span> <span>using</span> <a href="https://github.com/Appfy">Appfy</a>                    & <a href="https://jekyllrb.com/">Jekyll</a>
+                </p>
+            </div>
+            <div class="is-pulled-right">
+                <ul class="menu-list has-text-right">
+                    <li>Subscribe via <a href="/feed.xml">RSS</a></li>
+                    <li>Get in touch <a href="mailto:hi@st1s.io">hi@st1s.io</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <style>
+        footer.footer ul li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+        
+        footer.footer ul li a {
+            display: inline;
+            padding: 0;
+        }
+        
+        @media (max-width: 769px) {
+            footer.footer .is-pulled-left,
+            footer.footer .is-pulled-right {
+                float: none;
+            }
+            footer.footer .is-pulled-left ul,
+            footer.footer .is-pulled-right ul,
+            footer.footer .is-pulled-left p,
+            footer.footer .is-pulled-right p {
+                text-align: center;
+            }
+        }
+    </style>
 </footer>

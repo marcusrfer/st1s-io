@@ -1,7 +1,8 @@
 <div class="card">
     <div class="card-image">
-        <figure class="image is-4by3">
-            <img src="{{ include.post.image }}" alt="">
+        <figure class="image">
+            <div class="picture" style="background-image: url({{ include.post.image }})"></div>
+            <img class="is-hidden" src="{{ include.post.image }}" alt="">
         </figure>
     </div>
     <div class="card-content">
@@ -19,4 +20,26 @@
             <small>{{ include.post.date | date: "%b %-d, %Y"}}</small>
         </div>
     </div>
+    <style>
+        .card {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        
+        .card .card-content .title + .subtitle {
+            margin-top: 0;
+        }
+        
+        .card .card-content .desc {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 12px;
+            padding-bottom: 16px;
+        }
+        
+        .card .picture {
+            height: 150px;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
 </div>

@@ -9,6 +9,7 @@ featured: true
 image: false
 comments: true
 description: Today i am excited to talk about service unit test with mocha.js. For this post our service should be able work within the node and also in browser through the same code.
+heroClass: "is-danger is-bold"
 ---
 
 Hello devs,
@@ -326,7 +327,7 @@ Well now it's very easy , just create the angular service separately, then retur
 
 Working sample.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/64/embedded/result,js,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/64/embedded/result,js,html/light/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
@@ -337,8 +338,5 @@ Cya [=
 
 Repository of this post in Github: https://github.com/stewones/angular-mocha-service-tdd
 
----
 
 - [Versão em português](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd-pt.html)
-
----
