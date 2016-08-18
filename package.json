@@ -7,7 +7,7 @@
     "scripts": {
         "serve": "appfy serve",
         "serve:dist": "appfy serve --dist",
-        "install": "cd client && npm install && bower install",
+        "install": "cd client && npm install && bower install && cd ../jekyll && bundle install",
         "build": "appfy build client --static"
     },
     "repository": {

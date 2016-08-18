@@ -18,3 +18,7 @@ paginate: 4
 
 gems:
   - jekyll-paginate
+
+colors:
+  category: angular
+  

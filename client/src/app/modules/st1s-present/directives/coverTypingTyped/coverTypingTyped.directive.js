@@ -49,7 +49,7 @@
                             "if you liked",
                             "follow me",
                             "and keep up to date",
-                            "Thank you...(#"
+                            "(#"
                         ],
                         typeSpeed: 100,
                         backDelay: 1000,
