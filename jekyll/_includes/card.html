@@ -5,7 +5,7 @@
             <img class="is-hidden" src="{{ include.post.image }}" alt="">
         </figure>
     </div>
-    <div class="card-content">
+    <div class="card-content {{ include.post.heroClass }} {% if include.post.heroClass == null %}is-primary is-bold{% endif %} is-outlined">
         <div class="media">
             <div class="media-content">
                 <p class="title is-3">{{ include.post.title }}</p>
@@ -26,11 +26,16 @@
             margin: 0 auto;
         }
         
+        .card .card-content {
+            border-left: 3px solid #eee;
+        }
+        
         .card .card-content .title + .subtitle {
             margin-top: 0;
         }
         
         .card .card-content .desc {
+            color: #69707a;
             border-bottom: 1px solid #eee;
             margin-bottom: 12px;
             padding-bottom: 16px;
@@ -40,6 +45,65 @@
             height: 150px;
             background-position: center center;
             background-size: cover;
+        }
+        
+        .card .is-white.is-outlined {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+        }
+        
+        .card .is-black.is-outlined {
+            background-color: transparent;
+            border-color: #111;
+            color: #111;
+        }
+        
+        .card .is-light.is-outlined {
+            background-color: transparent;
+            border-color: #f5f7fa;
+            color: #f5f7fa;
+        }
+        
+        .card .is-dark.is-outlined {
+            background-color: transparent;
+            border-color: #69707a;
+            color: #69707a;
+        }
+        
+        .card .is-primary.is-outlined {
+            background-color: transparent;
+            border-color: #1fc8db;
+            color: #1fc8db;
+        }
+        
+        .card .is-info.is-outlined {
+            background-color: transparent;
+            border-color: #42afe3;
+            color: #42afe3;
+        }
+        
+        .card .is-success.is-outlined {
+            background-color: transparent;
+            border-color: #97cd76;
+            color: #97cd76;
+        }
+        
+        .card .is-warning.is-outlined {
+            background-color: transparent;
+            border-color: #fce473;
+            color: #fce473;
+        }
+        
+        .card .is-danger.is-outlined {
+            background-color: transparent;
+            border-color: #ed6c63;
+            color: #ed6c63;
+        }
+        
+        .card .is-outlined:hover,
+        .card .is-outlined:focus {
+            opacity: .7
         }
     </style>
 </div>
