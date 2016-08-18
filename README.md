@@ -1,5 +1,5 @@
 # st1s-io
-> My Jekyll powered home page
+> My home page
 
 Built using [Appfy](https://appfy.org) to generate some web components and use with Jekyll.
 
