@@ -1,0 +1,86 @@
+{
+    "client": {
+        "setting": {
+            "name": "st1s-io",
+            "slug": "st1s-io",
+            "email": "hi@st1s.io",
+            "logo": "/assets/images/logo.png",
+            "version": "0.0.1",
+            "title": "st1s-io",
+            "locale": "en_US",
+            "baseUrl": "http://www.st1s-io.com",
+            "titleSeparator": " — ",
+            "description": "st1s-io",
+            "keywords": "",
+            "icon": "/assets/favicon.png",
+            "copyright": "",
+            "ogLocale": "en_US",
+            "ogSiteName": "st1s-io",
+            "ogTitle": "st1s-io",
+            "ogDescription": "st1s-io",
+            "ogUrl": "http://st1s-io",
+            "ogImage": "",
+            "articleSection": "",
+            "articleTag": "",
+            "session": 1800,
+            "firebase": {
+                "apiKey": "",
+                "authDomain": "",
+                "databaseURL": "",
+                "storageBucket": ""
+            },
+            "wiki": {
+                "git": "",
+                "basePath": "/docs/"
+            },
+            "facebook": {},
+            "google": {}
+        }
+    },
+    "email": {
+        "logo": "",
+        "footer": ""
+    },
+    "server": {
+        "development": {
+            "enviroment": "development",
+            "api": {
+                "url": "http://localhost:9000"
+            },
+            "mongo": {
+                "uri": "mongodb://localhost/st1s-io-server-dev"
+            }
+        },
+        "production": {
+            "enviroment": "production",
+            "api": {
+                "url": ""
+            }
+        }
+    },
+    "deployment": {
+        "heroku": {
+            "client": "",
+            "server": ""
+        },
+        "github": {
+            "client": "st1s/st1s-io"
+        }
+    },
+    "sparkpost": {
+        "template": ""
+    },
+    "firebase": {
+        "databaseURL": "",
+        "type": "",
+        "project_id": "",
+        "client_email": "",
+        "client_id": "",
+        "auth_uri": "",
+        "token_uri": "",
+        "auth_provider_x509_cert_url": "",
+        "client_x509_cert_url": "",
+        "private_key_id":"",
+        "private_key": ""
+    }
+}
