@@ -1,8 +1,12 @@
 <section class="hero-post hero is-medium {% include color.html category=include.post.category %}">
+    <div class="hero-head">
+        {% include nav.html logo='st1s-logo-h-silver.svg' %}
+    </div>
     <div class="hero-body">
         <div class="container">
             <h1 class="title">
-                <a title="back" class="home" href="#" onClick="history.back(-1)"><i class="fa fa-backward"></i></a> {{ include.post.title }}
+                <a title="back" class="home" href="#" onClick="history.back(-1)"><i class="fa fa-backward"></i></a> {{ include.post.title
+                }}
             </h1>
             <h2 class="subtitle">
                 {{ include.post.subtitle }}

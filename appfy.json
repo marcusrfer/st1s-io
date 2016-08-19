@@ -5,10 +5,11 @@
                 "about": [
                     "Hi!",
                     "my name is Stewan",
-                    "but some people call me ' ist one s '",
+                    "but some people call me ' ist one s ' ...",
                     "do not ask me why O.o",
                     "I like to code",
                     "design",
+                    "user experience",
                     "think differently",
                     "build incredible things",
                     "coffee",
@@ -67,8 +68,18 @@
                 "git": "",
                 "basePath": "/docs/"
             },
-            "facebook": {},
-            "google": {}
+            "github": {
+                "profile": "https://github.com/st1s"
+            },
+            "google": {
+                "profile": "https://plus.google.com/+StewanPacheco"
+            },
+            "facebook": {
+                "profile": "https://www.facebook.com/StewanPacheco"
+            },
+            "twitter": {
+                "profile": "https://www.twitter.com/StewanPacheco"
+            }
         }
     },
     "email": {

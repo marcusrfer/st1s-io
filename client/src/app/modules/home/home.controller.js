@@ -16,6 +16,13 @@
         $page.title($state.current.title + ' ' + setting.titleSeparator + setting.name);
         boot();
 
-        function boot() { }
+        function boot() {
+            vm.social = {
+                github: setting.github,
+                google: setting.google,
+                twitter: setting.twitter,
+                facebook: setting.facebook
+            }
+        }
     });
 })();

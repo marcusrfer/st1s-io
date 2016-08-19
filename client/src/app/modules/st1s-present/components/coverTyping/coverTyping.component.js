@@ -9,7 +9,7 @@
             strings: '='
         },
         templateUrl: "app/modules/st1s-present/components/coverTyping/coverTyping.html",
-        controller: /*@ngInject*/ function ($scope) {
+        controller: /*@ngInject*/ function ($scope, setting) { 
             var vm = this;
             vm.strings = $scope.$ctrl.strings;
         }

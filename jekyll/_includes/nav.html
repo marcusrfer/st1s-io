@@ -1,57 +1,60 @@
-<nav class="nav">
+<nav class="nav-header nav">
     <div class="nav-left">
-        <a class="nav-item is-brand" href="/">
-            <img class="st1s" src="/static/images/{% if (include.logo) %}{{ include.logo }}{% else %}st1s-logo-h-silver.svg{% endif %}"
+        <a class="nav-item is-brand ng-hide animate-show" ng-show="showLogo" href="/">
+            <img class="st1s" change-logo src="/static/images/{% if (include.logo) %}{{ include.logo }}{% else %}st1s-logo-h-silver.svg{% endif %}"
                 alt="Stewan Pacheco">
         </a>
     </div>
 
     <div class="nav-center">
-        <a class="nav-item" href="{{ site.github }}">
-            <span class="icon">
-        <i class="fa fa-github"></i>
-      </span>
-        </a>
-        <a class="nav-item" href="{{ site.twitter }}">
-            <span class="icon">
-        <i class="fa fa-twitter"></i>
-      </span>
-        </a>
-        <a class="nav-item" href="{{ site.facebook }}">
-            <span class="icon">
-        <i class="fa fa-facebook-official"></i>
-      </span>
-        </a>
+        {% include social.ref.html %}
     </div>
 
-    <span class="nav-toggle">
+    <span class="nav-toggle" ng-click="vm.showNav=!vm.showNav">
     <span></span>
     <span></span>
     <span></span>
     </span>
 
-    <div class="nav-right nav-menu">
+    <div class="nav-right nav-menu" ng-class="{'show-nav':vm.showNav}">
         <a class="nav-item" href="/">
       Home
     </a>
         <a class="nav-item" href="/categories/">
       Categories
-    </a>      
+    </a>
 
         <span class="nav-item">
-      <a class="button" >
+      <a class="button" href="https://twitter.com/intent/tweet?text=...+{% include meta.title.html title=page.title %}+{{ page.url | prepend: site.url }}&source=st1s.io&related=st1s.io">
         <span class="icon">
           <i class="fa fa-twitter"></i>
         </span>
         <span>Tweet</span>
-        </a>      
+        </a>
         </span>
     </div>
     <style>
-        .nav img.st1s {
+        .nav-header {
+            height: 88px
+        }
+        
+        .nav-header.nav .nav-toggle {
+            margin-top: 20px;
+        }
+        
+        .nav-header.nav img.st1s {
             height: 68px;
             width: 131px;
             max-height: inherit;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .nav-header .nav-menu.show-nav {
+                display: block;
+            }
+            .nav-header .nav-menu a.nav-item {
+                padding-left: 16px;
+            }
         }
     </style>
 </nav>

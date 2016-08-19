@@ -10,6 +10,20 @@
     line-height: 20px;
 }
 
+.animate-show {
+    opacity: 1;
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide {
+    line-height: 0;
+    opacity: 0;
+    margin: 20px;
+}
+
 .post-content p, .post-content blockquote, .post-content table, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content ul, .post-content ol, .post-content .tags, .post-content iframe, .post-content .card-post {
     width: auto;
     max-width: 50rem;

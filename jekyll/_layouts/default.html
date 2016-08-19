@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js" ng-app="st1s-io" ng-controller="$AppCtrl as $app">
+<html class="no-js" ng-app="st1s-io">
 	{% if page.url != "/" %}
 	    {% include head.html %}
 	{% else %}
 		{% include head.index.html %}
 	{% endif %}
-<body>
+
+<body ng-controller="$AppCtrl as $app">
 	{% if page.url == "/" %}
-	    {% include header.html %}
+	    {% include hero.typing.html %}
 	{% endif %}
 
     {{ content }}

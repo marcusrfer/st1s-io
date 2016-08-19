@@ -2,26 +2,32 @@
     <section class="hero is-medium is-primary is-bold is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <cover-typing strings="$ctrl.strings()"></cover-typing>
+                <cover-typing strings="$ctrl.strings"></cover-typing>
             </div>
         </div>
         <div class="hero-foot">
             <div class="nav-center">
-                <a class="nav-item" href="https://github.com/st1s">
+                <a class="nav-item" href="{{$ctrl.social.github.profile}}">
                     <span class="icon is-medium">
         <i class="fa fa-github"></i>
       </span>
                 </a>
-                <a class="nav-item" href="https://facebook.com/st1s">
-                    <span class="icon is-medium">
-        <i class="fa fa-facebook"></i>
-      </span>
-                </a>
-                <a class="nav-item" href="https://twitter.com/st1s">
+                <a class="nav-item" href="{{$ctrl.social.twitter.profile}}">
                     <span class="icon is-medium">
         <i class="fa fa-twitter"></i>
       </span>
                 </a>
+                <a class="nav-item" href="{{$ctrl.social.google.profile}}">
+                    <span class="icon is-medium">
+        <i class="fa fa-google-plus"></i>
+      </span>
+                </a>
+                <a class="nav-item" href="{{$ctrl.social.facebook.profile}}">
+                    <span class="icon is-medium">
+        <i class="fa fa-facebook-official"></i>
+      </span>
+                </a>
+
             </div>
         </div>
     </section>

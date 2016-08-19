@@ -7,9 +7,14 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://st1s.io" # the base hostname & protocol for your site
 url: "http://localhost:4000" # the base hostname & protocol for your site
-twitter: ist1s
-github: ist1s
 
+
+# Social
+github: "https://github.com/st1s"
+google: "https://plus.google.com/+StewanPacheco"
+facebook: "https://facebook.com/StewanPacheco"
+twitter:  "https://twitter.com/StewanPacheco"
+            
 # Build settings
 markdown: kramdown
 theme: minima
@@ -43,3 +48,37 @@ colors:
   - category: "github"
     colorClass: "is-dark"
     name: "github"
+
+typingStrings: [
+                    "Hi!",
+                    "my name is Stewan",
+                    "but some people call me ' ist one s '",
+                    "do not ask me why O.o",
+                    "I like to code",
+                    "design",
+                    "user experience",
+                    "think differently",
+                    "build incredible things",
+                    "coffee",
+                    "solve problems",
+                    "coffee",
+                    "automate tasks",
+                    "did i say coffee?",
+                    "...",
+                    "I'm currently",
+                    "hard working with",
+                    "angular",
+                    "node",
+                    "html5",
+                    "css",
+                    "firebase",
+                    "mongo.db",
+                    "all involving",
+                    "open source culture",
+                    "and s2 javascript",
+                    "Thanks for reading",
+                    "if you liked",
+                    "follow me",
+                    "and keep up to date",
+                    "(#"
+                ]

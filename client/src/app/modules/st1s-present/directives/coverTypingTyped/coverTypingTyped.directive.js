@@ -14,7 +14,6 @@
             controllerAs: 'vm',
             controller: /*@ngInject*/ function ($scope) {
                 var vm = this;
-                //ctrl code
             },
             link: function ($scope, $elem, $attr) {
                 $(function () {
