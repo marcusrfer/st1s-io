@@ -3,9 +3,8 @@
     /**
      * @ngdoc overview
      * @name st1s-io
-     * @requires appfy.core
      * @description
-     * The app modules
+     * My personal home
      **/
     angular.module('st1s-io', [
         'ngAnimate',
