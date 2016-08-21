@@ -16,3 +16,4 @@ client/src/app/constants/*
 *.log
 .bower.json
 env.json
+appfy.json
