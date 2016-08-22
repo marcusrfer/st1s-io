@@ -1,0 +1,14 @@
+{
+  "name": "st1s-present",
+  "version": "0.0.1",
+  "description": "Module to wrap some presentation stuff",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stewones/st1s-present"
+  },
+  "main": [
+    "st1s-present.min.js",
+    "st1s-present.min.css"
+  ]
+}

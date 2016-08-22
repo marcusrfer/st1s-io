@@ -8,6 +8,7 @@ coverage/
 .client.build/
 .server.build/
 .wiki.build/
+.jekyll.build/
 .build/
 dist/
 client/src/app/constants/*

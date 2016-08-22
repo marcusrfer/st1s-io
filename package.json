@@ -8,7 +8,7 @@
         "serve": "appfy serve",
         "serve:dist": "appfy serve --dist",
         "install": "cd client && npm install && bower install && cd ../jekyll && bundle install",
-        "build": "appfy build client --static"
+        "build": "rm -rf ./.jekyll.build && cp -rfv jekyll ./.jekyll.build && cd .jekyll.build && git init && git remote add origin https://github.com/stewones/st1s-io && git checkout -b gh-pages && git add -A && git commit -am '' && git push --force origin gh-pages"
     },
     "repository": {
         "type": "git",
