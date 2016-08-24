@@ -13,10 +13,18 @@
         $interpolateProvider.startSymbol('[[');
         $interpolateProvider.endSymbol(']]');
     })
-        .controller('$AppCtrl', function ($scope, setting) {
+        .controller('$AppCtrl', function ($scope, $timeout, setting) {
             this.setting = function () {
                 return setting;
             }
+            $timeout(function () {
+                // highlight snippet
+                if (window.hljs) {               
+                    $('pre code').each(function (i, block) {
+                        window.hljs.highlightBlock(block);
+                    });
+                }
+            }, 0);
         })
         .directive('changeLogo', function ($rootScope, $timeout) {
             return {

@@ -5,12 +5,14 @@
 	{% else %}
 		{% include head.index.html %}
 	{% endif %}
-<body>
+<body ng-controller="$AppCtrl as $app">
     {% include hero.post.html post=page %}
    
     <section class="section post-content markdown-body">
         {{ content }}
     </section>
+
+	{% include hero.disqus.html %}
 
 	{% if page.url != "/" %}
 	    {% include footer.html %}

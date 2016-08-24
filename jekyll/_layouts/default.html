@@ -9,6 +9,7 @@
 <body ng-controller="$AppCtrl as $app">
 	{% if page.url == "/" %}
 	    {% include hero.typing.html %}
+	    <down-arrow place="'.card-list'"></down-arrow>
 	{% endif %}
 
     {{ content }}
