@@ -5,9 +5,9 @@ subtitle: "Publicação no Heroku e Github Pages"
 date:   2016-08-22
 category: angularjs
 tags: [angularjs, heroku, appfy]
-image: http://i.imgur.com/8yh0COR.png
+image: https://i.imgur.com/8yh0COR.png
 comments: true
-description: Mais rápido que miojo, hoje vou falar um pouco sobre como iniciar uma aplicação web javascript feita em angular.js, com uma boa estrutura, escalável e pronta para um ciclo rápido de desenvolvimento e publicação..
+description: Mais rápido que fazer miojo, hoje vou falar um pouco sobre como iniciar uma aplicação web javascript feita em angular.js, com uma boa estrutura, escalável e pronta para um ciclo rápido de desenvolvimento e publicação..
 ---
 
 Mais rápido que miojo, hoje vou falar um pouco sobre como iniciar uma aplicação web javascript feita em angular.js, com uma boa estrutura, escalável e pronta para um ciclo rápido de desenvolvimento e publicação.
@@ -19,7 +19,7 @@ Mais rápido que miojo, hoje vou falar um pouco sobre como iniciar uma aplicaç�
 - [Heroku Toolbelt](https://devcenter.heroku.com/articles/heroku-command-line)
 - [Appfy](https://appfy.org/)
 
-<img src="http://i.imgur.com/8yh0COR.png" title="Criando uma aplicação angular.js em 3min" style="max-width: 175px">
+<img src="https://i.imgur.com/8yh0COR.png" title="Criando uma aplicação angular.js em 3min" style="max-width: 175px">
 
 
 
@@ -30,7 +30,7 @@ Ai você me pergunta, qual solução de hospedagem eu devo escolher? minha respo
 
 amigo se vc quer algo de qualidade e privado, pague por isto. Eu pago e acho um dinheiro muito bem investido. Mesmo com repositórios privados, você poderá servir tranquilamente suas aplicações.
 
-<img src="http://i.imgur.com/7FJn7ao.gif" />
+<img src="https://i.imgur.com/7FJn7ao.gif" />
 
 
 #### Posso utilizar servidor compartilhado?
