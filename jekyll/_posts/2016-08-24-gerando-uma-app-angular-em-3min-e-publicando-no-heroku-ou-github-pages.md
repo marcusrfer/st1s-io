@@ -23,7 +23,7 @@ Mais rápido que miojo, hoje vou falar um pouco sobre como iniciar uma aplicaç�
 
 
 
-Iremos trabalhar com o [Appfy](https://appfy.org) como ferramenta para geração de nosso cliente angular, [Heroku](https://heroku.com) e [Github Pages](https://pages.github.com/) para servir o resultado final.
+Iremos trabalhar com o [Appfy](https://appfy.org) como ferramenta para auxiliar em algumas tarefas, [Heroku](https://heroku.com) e [Github Pages](https://pages.github.com/) para servir o resultado final.
 Ai você me pergunta, qual solução de hospedagem eu devo escolher? minha resposta é: depende. O Github Pages hospeda apenas arquivos estáticos, logo se você está iniciando algo simples que não vai depender de recursos que exijam processamento, recomendo fortemente que utilize o GH Pages. Você não terá dor de cabeça, uptime é de 99% e seus arquivos serão entregues rapidamente em qualquer parte do planeta, pois estarão sendo distribuídos pela própria infra do Github.
 
 > "Ah mais ai todo mundo vai ver meu código"
