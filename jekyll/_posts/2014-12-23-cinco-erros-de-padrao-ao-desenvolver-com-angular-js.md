@@ -328,29 +328,25 @@ function SomeController($scope, $log) {
 /**
  * recomendado
  */
-
-    ├── Login
-    |   ├── login.module.js      
-    │   ├── login.factory.js
-    │   ├── login.service.js
-    │   └── etc..
-    ├── Dashboard
-    |   ├── dashboard.module.js      
-    │   ├── login.factory.js
-    │   ├── login.service.js
-    │   └── etc..
-    ├── Cliente
-    |   ├── cliente.module.js      
-    │   ├── cliente.factory.js
-    │   ├── cliente.service.js
-    │   └── etc..
-    └── .gitignore                                  
+├── Login
+|   ├── login.module.js      
+│   ├── login.factory.js
+│   ├── login.service.js
+│   └── etc..
+├── Dashboard
+|   ├── dashboard.module.js      
+│   ├── login.factory.js
+│   ├── login.service.js
+│   └── etc..
+├── Cliente
+|   ├── cliente.module.js      
+│   ├── cliente.factory.js
+│   ├── cliente.service.js
+│   └── etc..
+└── .gitignore                                  
 ```
 
 **Nota:** Utilizar o modelo folder-by-type representado acima, requer um trabalho muito maior para localizar e trabalhar em vários recursos ao mesmo tempo
-
-# Conclusão
-Para quem está iniciando com angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).
 
 #### [update 26/08/2016]
 
@@ -358,7 +354,7 @@ Atualmente utilizo uma estrutura de pasta hibrida, baseada em modulos e com outr
 
 No caso seria algo parecido com:
 
-```
+```javascript
 ├── README.md
 ├── gulpfile.js                               
 ├── package.json                                 <- dependencias de desenvolvimento                             
@@ -383,3 +379,6 @@ No caso seria algo parecido com:
 │       └── index.html                           <- template principal
 └── .gitignore                                  
 ```
+
+# Conclusão
+Para quem está iniciando com angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).

@@ -12,7 +12,8 @@
         {{ content }}
     </section>
 
-	<social-share section-class="'is-primary'" url="'{{page.url | prepend:site.url}}'" media="'{{ page.image }}'" text="'{{ page.title }}'"></social-share>
+
+	<social-share section-class="'is-primary'" url="'{{page.url | prepend:site.url}}'" media="'{% include media.share.html %}'" text="'{{ page.title }}'"></social-share>
 
 	{% include hero.disqus.html %}
 
