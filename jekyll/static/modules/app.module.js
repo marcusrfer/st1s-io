@@ -8,6 +8,7 @@
      **/
     angular.module('st1s-io', [
         'ngAnimate',
+        '720kb.socialshare',
         'st.1.s.present'
     ], function ($interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
@@ -19,7 +20,7 @@
             }
             $timeout(function () {
                 // highlight snippet
-                if (window.hljs) {               
+                if (window.hljs) {
                     $('pre code').each(function (i, block) {
                         window.hljs.highlightBlock(block);
                     });

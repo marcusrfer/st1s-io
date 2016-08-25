@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "appfy": "latest",
-    "appfy-error": "latest"
+    "appfy-error": "latest",
+    "angular-socialshare": "angularjs-socialshare#^2.2.5"
   },
   "resolutions": {
     "angular": "~1.5.3"
