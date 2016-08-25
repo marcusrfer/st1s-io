@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "5 erros de padrão ao desenvolver com Angular.js"
-subtitle: "Dicas para iniciantes em Angular"
+title:  "5 erros de padrão ao desenvolver com angular.js"
+subtitle: "Dicas para iniciantes em angular"
 date:   2014-12-23
 category: angularjs
 categories: [angularjs]
@@ -9,36 +9,41 @@ tags: [angularjs]
 featured: false
 image: false
 comments: true
-description: O Angular.js simplesmente não dá erro, é impressionante como você pode escrever um verdadeiro spaguetti.js que tudo funciona, em termos.
+description: O angular.js simplesmente não dá erro, é impressionante como você pode escrever um verdadeiro spaguetti.js que tudo funciona, em termos. [update 25/08/2016]
 ---
 
-Quando realmente comecei a trabalhar com Angular.js, achava incrível a capacidade de escrever qualquer coisa, resolver qualquer problema, sem muitos erros durante a fase de prototipação. O Angular simplesmente não dá erro, é impressionante como você pode escrever um verdadeiro spaguetti.js que tudo funciona, em termos.
+Quando realmente comecei a trabalhar com angular.js, digo utilizando ele somente como framework para todo o frontend, e não somente como uma coisinha legal dentro de alguma outra coisa qualquer, achava incrível a capacidade de escrever tudo e resolver problemas sem muitos erros, durante a fase de prototipação. O angular simplesmente não dá erro, é impressionante como você pode fazer um verdadeiro spaguetti.js que tudo vai funcionar, em termos.
 
-O problema do macarrão.js está na fase em que você precisa crescer seu code, imagina um sistema com várias rotas, módulos, diretivas, services, etc..
-Vou mostrar abaixo um exemplo da organização por features, recomendada por um dos maiores evangelistas sobre angular do mundo, John Papa.
+O problema do macarrão.js está na fase em que você precisa crescer ~~seu code~~ sua aplicação, imagina um sistema com várias rotas, módulos, diretivas, services, componentes, etc.. 
+Fora que uma coisa é escrever pra você entender, outra é para que o cara la do outro lado continente entenda.
 
-- Login
-    - app.login.js
-    - login.factory.js
-    - login.service.js
-    - ...etc...
-- Dashboard
-    - app.dashboard.js
-    - dashboard.factory.js
-    - dashboard.service.js
-    - ...etc...
-- Clientes
-    - app.cliente.js
-    - cliente.factory.js
-    - cliente.service.js
-    - ...etc...
+um exemplo de como seria essa organização por features, recomendada por um dos maiores evangelistas sobre angular, [@johnpapa](https://twitter.com/john_papa).
 
-Além de organizar nossas pastas por features, você terá que evoluir, testar e dar manutenção. Se não seguir alguns padrões de desenvolvimento, com certeza terá alguns probleminhas [=
+```                            
+├── Login
+|   ├── login.module.js      
+│   ├── login.factory.js
+│   ├── login.service.js
+│   └── etc..
+├── Dashboard
+|   ├── dashboard.module.js      
+│   ├── login.factory.js
+│   ├── login.service.js
+│   └── etc..
+├── Cliente
+|   ├── cliente.module.js      
+│   ├── cliente.factory.js
+│   ├── cliente.service.js
+│   └── etc..
+└── .gitignore                                  
+```
 
-Baseando-me no style guide para Angular.js escrito por [@johnpapa](https://twitter.com/john_papa), resolvi apontar 5 erros de padrão, que na minha opnião, são os mais críticos para quem está começando com Angular.
+Além de organizar nossas pastas por features, você terá que evoluir, testar e dar manutenção. Se não seguir alguns padrões de desenvolvimento, com certeza terá problemas
+
+Baseando-me no style guide do Papa, resolvi apontar 5 erros de padrão, que na minha opnião, são os mais críticos para quem está começando a trilhar este caminho.
 
 
-#1 - Princípio da responsabilidade única
+# 1 - Princípio da responsabilidade única
 
 Primeira regra
 
@@ -66,9 +71,7 @@ Agora o mesmo só que separando em seus próprios arquivos.
 // app.module.js
 angular
       .module('app', ['ngRoute']);
-```
 
-```javascript
 /* recomendado */
 
 // someController.js
@@ -77,9 +80,7 @@ angular
       .controller('SomeController', SomeController);
 
 function SomeController() { }
-```
 
-```javascript
 /* recomendado */
 
 // someFactory.js
@@ -90,8 +91,8 @@ angular
 function someFactory() { }
 ```
 
-#2 - IIFE
-###Javascript Closures
+# 2 - IIFE
+### Javascript Closures
 
 - Envolva seus componentes AngularJS em uma "Immediately Invoked Function Expression" - IIFE.
 
@@ -116,9 +117,7 @@ angular
 
 // a função storage é adicionada como uma variável global 
 function storage() { }
-```
 
-```javascript
 /**
 * recomendado 
 *
@@ -148,7 +147,7 @@ function storage() { }
 })();
 ```
 
-#3 - Diretivas
+# 3 - Diretivas
 - Crie uma diretiva por arquivo, com o mesmo nome.
 
 **Por que?:** É muito mais fácil juntar tudo em um arquivo só, porém difícil de dar manutenção e reutilizar em diferentes módulos.
@@ -181,9 +180,7 @@ function salesCustomerInfo() {
 function sharedSpinner() {
     /* implementação */
 }
-```
 
-```javascript
 /* recomendado */
 /* calendarRange.directive.js */
 
@@ -198,9 +195,7 @@ angular
 function orderCalendarRange() {
     /* implementação */
 }
-```
 
-```javascript
 /* recomendado */
 /* customerInfo.directive.js */
 
@@ -215,9 +210,7 @@ angular
 function salesCustomerInfo() {
     /* implementação */
 }
-```
 
-```javascript
 /* recomendado */
 /* spinner.directive.js */
 
@@ -237,7 +230,7 @@ function sharedSpinner() {
 **Nota:** Existem muitas opções para nomear diretivas, escolha uma que a torne limpa e distinta.
 
 
-###Prefixo único para a diretiva
+### Prefixo único para a diretiva
 
 - Forneça um prefixo curto, único e descritivo, como `acmeSalesCustomerInfo` que é declarado no HTML como `acme-sales-customer-info`.
 
@@ -245,9 +238,9 @@ function sharedSpinner() {
 
 **Nota:** Evite utilizar `ng-` pois este prefixo é reservado as diretivas do AngularJS, assim como `ion-` para o framework Ionic.
 
-#4 - Controllers
+# 4 - Controllers
 
-###controllerAs View Syntax
+### controllerAs View Syntax
 
 - Ao invés do clássico `$scope` pra tudo quanto é lado, utilize o `controllerAs` syntax.
 
@@ -257,7 +250,7 @@ function sharedSpinner() {
 
 **Por que?:** Ajuda evitar a necessidade de ficar chamando `$parent` toda hora em nested controllers.
 
-###controllerAs Controller Syntax
+### controllerAs Controller Syntax
 
 - Utilize controllerAs ao invés do modo clássico com `$scope`.
 
@@ -271,9 +264,7 @@ function Customer($scope) {
     $scope.name = {};
     $scope.sendMessage = function() { };
 }
-```
 
-```javascript
 /* recomendado - mas tem como melhorar */
 function Customer() {
     this.name = {};
@@ -281,7 +272,7 @@ function Customer() {
 }
 ```
 
-#controllerAs, com "vm"
+# controllerAs, com "vm"
 
 - Utilize uma variável de captura quando estiver usando controllerAs syntax. Defina um nome de variável consistente como "vm", que representa o padrão ViewModel.
 
@@ -293,8 +284,7 @@ function Customer() {
     this.name = {};
     this.sendMessage = function() { };
 }
-```
-```javascript
+
 /* recomendado */
 function Customer() {
     var vm = this;
@@ -312,7 +302,7 @@ var vm = this;
 
 **Nota:** Quando criar watches em um controlador que utiliza controllerAs syntax, você pode observar qualquer membro da variável `vm`, usando a syntax do exemplo abaixo. (Cuidado ao criar watches pois eles adicionam mais carga ao diggest cycle)
 
-```javascript
+```html
 <input ng-model="vm.title"/>
 ```
 
@@ -328,7 +318,7 @@ function SomeController($scope, $log) {
 }
 ```
 
-#5 - Estrutura das pastas por feature
+# 5 - Estrutura das pastas por feature
 
 - Crie pastas com o nome da feature que ela representa.
 
@@ -339,47 +329,57 @@ function SomeController($scope, $log) {
  * recomendado
  */
 
-app/
-    app.module.js
-    app.config.js
-    app.routes.js
-    components/       
-        calendar.directive.js  
-        calendar.directive.html  
-        user-profile.directive.js  
-        user-profile.directive.html  
-    layout/
-        shell.html      
-        shell.controller.js
-        topnav.html      
-        topnav.controller.js       
-    people/
-        attendees.html
-        attendees.controller.js  
-        speakers.html
-        speakers.controller.js
-        speaker-detail.html
-        speaker-detail.controller.js
-    services/       
-        data.service.js  
-        localstorage.service.js
-        logger.service.js   
-        spinner.service.js
-    sessions/
-        sessions.html      
-        sessions.controller.js
-        session-detail.html
-        session-detail.controller.js
+    ├── Login
+    |   ├── login.module.js      
+    │   ├── login.factory.js
+    │   ├── login.service.js
+    │   └── etc..
+    ├── Dashboard
+    |   ├── dashboard.module.js      
+    │   ├── login.factory.js
+    │   ├── login.service.js
+    │   └── etc..
+    ├── Cliente
+    |   ├── cliente.module.js      
+    │   ├── cliente.factory.js
+    │   ├── cliente.service.js
+    │   └── etc..
+    └── .gitignore                                  
 ```
-
-
-<img src="https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/modularity-2.png">
 
 **Nota:** Utilizar o modelo folder-by-type representado acima, requer um trabalho muito maior para localizar e trabalhar em vários recursos ao mesmo tempo
 
-#Conclusão
-Para quem está iniciando com Angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).
+# Conclusão
+Para quem está iniciando com angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).
 
-Deixe seu comentário.
-<br />
-Cya.
+#### [update 26/08/2016]
+
+Atualmente utilizo uma estrutura de pasta hibrida, baseada em modulos e com outros niveis de abstrações.
+
+No caso seria algo parecido com:
+
+```
+├── README.md
+├── gulpfile.js                               
+├── package.json                                 <- dependencias de desenvolvimento                             
+├── client
+|   ├── bower.json                               <- dependencias do cliente          
+│   └── src                                      <- código fonte do cliente
+│       ├── app
+│       │   └── modules                      
+│       │   │   ├── home
+│       │   │   │   ├── home.config.js
+│       │   │   │   ├── home.component.js
+│       │   │   │   ├── home.spec.js
+│       │   │   │   ├── home.html
+│       │   │   │   ├── home.css
+│       │   └── themes         
+│       │   │   ├── default
+│       │   │   │   ├── theme.html
+│       │   ├── app.config.js                    <- config phase do angular
+│       │   ├── app.run.js                       <- run phase do angular
+│       │   ├── app.module.js                    <- carregamento de modulos
+│       ├── assets
+│       └── index.html                           <- template principal
+└── .gitignore                                  
+```
