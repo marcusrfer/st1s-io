@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gerando uma aplicação angular.js em 3min"
-subtitle: "Publicação no Heroku e Github Pages"
+subtitle: "Com publicação no Heroku e Github Pages"
 date:   2016-08-22
 category: angularjs
 tags: [angularjs, heroku, appfy]
