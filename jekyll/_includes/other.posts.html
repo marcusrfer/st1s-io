@@ -1,0 +1,41 @@
+<section class="hero other-posts is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <br /> <br /> <br />
+            <h3 class="title is-2">Other posts</h3>
+            <br /> <br />{% for post in site.related_posts limit:3 %}
+            <a href="{{ site.url }}{{ post.url }}">
+                <article class="post">
+                    <i class="fa fa-angle-right pull-left" aria-hidden="true"></i>
+                    <div class="article-item">
+                        <header class="post-header">
+                            <h4 class="subtitle is-3">{{ post.title }}</h4>
+                        </header>
+                        <section class="post-excerpt">
+                            <p>{{ post.subtitle }}</p>
+                        </section>
+                    </div>
+                    <hr />
+                </article>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <style>
+        .other-posts a:hover {
+            color: #fff
+        }
+        
+        .other-posts i {
+            font-size: 33px
+        }
+        
+        .other-posts p {
+            margin: 9px;
+        }
+        
+        .other-posts hr {
+            border-color: rgba(17, 17, 17, 0.1);
+        }
+    </style>
+</section>

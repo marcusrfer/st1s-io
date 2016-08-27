@@ -14,7 +14,8 @@
 
 
 	<social-share section-class="'is-primary'" url="'{{page.url | prepend:site.url}}'" media="'{% include media.share.html %}'" text="'{{ page.title }}'"></social-share>
-
+	
+	{% include other.posts.html %}
 	{% include hero.disqus.html %}
 
 	{% if page.url != "/" %}
