@@ -50,6 +50,10 @@ colors:
     colorClass: "is-dark"
     name: "github"
 
+  - category: "javascript"
+    colorClass: "is-warning"
+    name: "Javascript"
+
 typingStrings: [
                     "Hi!",
                     "my name is Stewan",

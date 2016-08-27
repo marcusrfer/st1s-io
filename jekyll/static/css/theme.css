@@ -101,6 +101,10 @@
     max-width: 305px;
 }
 
+.categories .tabs a {
+    font-size: 20px;
+}
+
 @media (max-width: 768px) {
     .pagination > a {
         width: inherit;

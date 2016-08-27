@@ -6,6 +6,7 @@
     "homepage": "https://",
     "scripts": {
         "serve": "appfy serve",
+        "serve:jekyll": "cd jekyll && jekyll serve --watch",
         "serve:dist": "appfy serve --dist",
         "install": "cd client && npm install && bower install && cd ../jekyll && bundle install",
         "build": "rm -rf ./.jekyll.build && cp -rfv jekyll ./.jekyll.build && cd .jekyll.build && git init && git remote add origin https://github.com/stewones/st1s-io && git checkout -b gh-pages && git add -A && git commit -am '' && git push --force origin gh-pages"
