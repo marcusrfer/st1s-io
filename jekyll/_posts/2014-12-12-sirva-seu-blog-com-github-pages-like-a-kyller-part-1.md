@@ -44,7 +44,7 @@ Contras
 	- Há quem diga que devido a implementações de segurança contra ataques DDoS, o GitHub trabalha mais rápido (1a requisição) com "www" (ou qualquer coisa antes do dominio). Mas isto não te impede de trabalhar sem o "www", como é o meu caso. Sinceramente não senti tanta diferença no tempo de resposta.
 
 - Baixo controle sobre URLs
-	- Existem duas opções de como exibir a URL do seu Post. Ex.: "stpa.co/my-post.html" ou "stpa.co/my-post". Pessoalmente eu não me importo em usar a extensão .html
+	- Existem duas opções de como exibir a URL do seu Post. Ex.: "st1s.io/my-post.html" ou "st1s.io/my-post". Pessoalmente eu não me importo em usar a extensão .html
 
 - Sem cookies
 	- Algumas vezes seria bom alterar o conteúdo do seu visitante, com base em cookies. Porém existe um <a href='https://github.com/blog/1466-yummy-cookies-across-domains' target='_blank'>problema</a> de segurança ao compartilhar cookies entre os domínios do GitHub.
@@ -55,4 +55,4 @@ Contras
 - Sem suporte SSL?
 	- Por padrão todos domínios *.github.io já suportam HTTPS. Para domínios customizados (como no meu caso), a solução que encontrei foi utlizar o SSL da CloudFlare, que inclusive achei a configuração bem simples e irei comentar na parte 3 deste post.
 	
-Continuação - [parte 2](https://stpa.co/github/jekyll/2014/12/14/sirva-seu-blog-com-github-pages-like-a-kyller-part-2.html) / [parte 3](https://stpa.co/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)
+Continuação - [parte 2](https://st1s.io/github/jekyll/2014/12/14/sirva-seu-blog-com-github-pages-like-a-kyller-part-2.html) / [parte 3](https://st1s.io/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)

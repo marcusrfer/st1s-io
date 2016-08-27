@@ -22,7 +22,7 @@ Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu 
 ### Intro
 Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido.
 
-<img src="http://i.imgur.com/AxA93C2.jpg">
+<img src="https://i.imgur.com/AxA93C2.jpg">
 
 haha, é isto o que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha).
 
@@ -42,7 +42,7 @@ Os requisitos seriam:
 
 Para começar vamos escrever primeiramente o teste unitário, cujo serviço em angular deverá respeitar. Lembrando que este serviço terá de atender tanto no browser quanto no node, evitando assim códigos duplicados. Imagine se tudo que você fizer no angular, tiver que repetir no node em?
 
-<img src="http://i.imgur.com/43PGbLW.jpg">
+<img src="https://i.imgur.com/43PGbLW.jpg">
 
 Então vamos começar instalando o mocha de maneira global
 
@@ -178,7 +178,7 @@ Ok, agora temos o teste unitário do serviço porém ele ainda não irá funcion
 
 Agora vamos trabalhar o serviço da comissão. Lembrando que o mesmo poderá ser utilizado tanto pelo browser (com angular), quanto pelo node (com o mocha).
 
-<img src="http://i.imgur.com/MOC7YeL.jpg">
+<img src="https://i.imgur.com/MOC7YeL.jpg">
 
 Precisaremos também de uma outra pequena lib chamada `lodash` para efetuar algumas operações.
 
@@ -305,9 +305,9 @@ Agora que nossa lib está pronta para rodar, vamos executar o teste com o comand
 mocha commission.spec.js
 ```
 
-<img src="http://i.imgur.com/v02PyUf.png">
+<img src="https://i.imgur.com/v02PyUf.png">
 
-####Tá bom stewones, mas e o angular? aonde o danado entra nesta história?
+####Tá bom st1s, mas e o angular? aonde o danado entra nesta história?
 
 Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a classe que está anexada ao objeto window, e seja feliz.
 
@@ -321,13 +321,13 @@ Bom agora é muito fácil, basta criar nosso serviço em angular separadamente r
 })();
 ```
 
-<img src="http://i.imgur.com/TUB57Xl.png">
+<img src="https://i.imgur.com/TUB57Xl.png">
 
 <br />
 
 Exemplo em funcionamento
 
-<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/64/embedded/result,js,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/st1s/8an2hwyn/64/embedded/result,js,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
@@ -336,7 +336,7 @@ Espero ter ajudado de alguma forma e ter esclarecido um pouco sobre testes unit�
 
 Cya [=
 
-Repositório deste post no Github: https://github.com/stewones/angular-mocha-service-tdd
+Repositório deste post no Github: https://github.com/st1s/angular-mocha-service-tdd
 
 
-- [English version](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
+- [English version](https://st1s.io/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)

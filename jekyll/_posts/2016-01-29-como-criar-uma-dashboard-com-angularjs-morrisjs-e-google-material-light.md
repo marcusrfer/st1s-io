@@ -21,11 +21,11 @@ Sendo assim, neste post iremos trabalhar um exemplo de Dashboard utilizando MDL,
 
 
 _Mas perai Stewan, se não é necessário uso de framework com MDL, então pra que vamos utilizar o Angular?_
-<img src="http://i.imgur.com/GHPV1aR.jpg" />
+<img src="https://i.imgur.com/GHPV1aR.jpg" />
 
-É porque vamos precisar também de um módulo em angular que comecei aproximadamente 1 ano atrás, chamado [angular-morris-chart](http://angular-morris-chart.stpa.co/), que visa justamente facilitar o uso do Morris.js através de diretivas.
+É porque vamos precisar também de um módulo em angular que comecei aproximadamente 1 ano atrás, chamado [angular-morris-chart](https://angular-morris-chart.st1s.io/), que visa justamente facilitar o uso do Morris.js através de diretivas.
 
-Não se preocupe pois a lib é bem levinha e fácil de usar, pesa apenas 7kb na [versão minificada](https://raw.githubusercontent.com/stewones/angular-morris-chart/master/src/angular-morris-chart.min.js), [aqui tem a documentação](http://angular-morris-chart.stpa.co) com exemplos que você pode dar uma conferida depois.
+Não se preocupe pois a lib é bem levinha e fácil de usar, pesa apenas 7kb na [versão minificada](https://raw.githubusercontent.com/st1s/angular-morris-chart/master/src/angular-morris-chart.min.js), [aqui tem a documentação](https://angular-morris-chart.st1s.io) com exemplos que você pode dar uma conferida depois.
 
 Então vamos ao que interessa!
 
@@ -238,9 +238,9 @@ Arquivo `app/dashboard.controller.js`
 ```
 
 ## Template
-O bacana é que de cara o Google já lançou [vários templates](http://getmdl.io/templates/) de exemplo, vamos escolher o [modelo Dashboard](http://getmdl.io/templates/dashboard/index.html) para trabalharmos em cima dele.
+O bacana é que de cara o Google já lançou [vários templates](https://getmdl.io/templates/) de exemplo, vamos escolher o [modelo Dashboard](https://getmdl.io/templates/dashboard/index.html) para trabalharmos em cima dele.
 
-<img src="http://i.imgur.com/4CbSNPr.jpg" />
+<img src="https://i.imgur.com/4CbSNPr.jpg" />
 
 
 `arquivo index.html`
@@ -291,7 +291,7 @@ e substituindo por `"/node_modules/material-design-lite/dist/templates/dashboard
 Para finalizar as adequações no template será necessário apagar o código html dentro da tag `<main>`.
 Isto servirá para entrarmos com o nosso conteúdo no lugar do que vem no template:
 
-<img src="http://i.imgur.com/in7kFpF.png" />
+<img src="https://i.imgur.com/in7kFpF.png" />
 
 
 Agora precisamos criar as condições mínimas de template para que o angular execute corretamente, adicionando os atributos ng-app e ng-controller.
@@ -366,8 +366,8 @@ Deverá aparecer algo assim:
 ```
 Starting up http-server, serving ./
 Available on:
-  http:192.168.1.4:8080
-  http:127.0.0.1:8080
+  https:192.168.1.4:8080
+  https:127.0.0.1:8080
 Hit CTRL-C to stop the server
 ```
 
@@ -375,12 +375,12 @@ Abra seu navegador e entre com qualquer um dos endereços. Um é o local (127.0.
 
 Este é o resultado final
 
-<iframe width="100%" height="500" src="//jsfiddle.net/stewones/48p9wy40/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/st1s/48p9wy40/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
-- [Repositório](https://github.com/stewones/angular-mdl-morris-dashboard) deste post no Github
+- [Repositório](https://github.com/st1s/angular-mdl-morris-dashboard) deste post no Github
 - [Repositório](https://github.com/google/material-design-lite/tree/master/templates/dashboard) do tema
 - [Documentação](https://www.getmdl.io) do MDL
-- [Documentação](http://angular-morris-chart.stpa.co/) do angular-morris-chart
-- [Documentação](http://morrisjs.github.io/morris.js/) do Morris.js
+- [Documentação](https://angular-morris-chart.st1s.io/) do angular-morris-chart
+- [Documentação](https://morrisjs.github.io/morris.js/) do Morris.js

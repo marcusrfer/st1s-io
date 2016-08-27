@@ -22,7 +22,7 @@ Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 
 ### Intro
 Mocha is a javascript framework for testing, which runs on node.js and browser. It is simple, flexible and fun.
 
-<img src="http://i.imgur.com/AxA93C2.jpg">
+<img src="https://i.imgur.com/AxA93C2.jpg">
 
 haha , that's what they say, and I agree fully. Taken from their [own doc](https://github.com/mochajs/mocha).
 
@@ -42,7 +42,7 @@ The requirements are:
 
 To begin we will first write unit testing, whose service in angular must respect. Remembering that this service has to meet both the browser and in the node, thus avoiding duplicate codes. Imagine if all you do in angular, you have to repeat in node?
 
-<img src="http://i.imgur.com/43PGbLW.jpg">
+<img src="https://i.imgur.com/43PGbLW.jpg">
 
 So let's start installing mocha globally
 
@@ -178,7 +178,7 @@ Ok, we now have the spec for our service but it will not work without the commis
 
 Now let's work the Commission Service. Not forgetting that it should work both the browser (with angular), as in node (with mocha).
 
-<img src="http://i.imgur.com/MOC7YeL.jpg">
+<img src="https://i.imgur.com/MOC7YeL.jpg">
 
 We will also need another small lib called `lodash` to perform some operations.
 
@@ -305,7 +305,7 @@ Now that our lib is ready, let's run the test with the command
 mocha commission.spec.js
 ```
 
-<img src="http://i.imgur.com/v02PyUf.png">
+<img src="https://i.imgur.com/v02PyUf.png">
 
 ####Stewones okay, but what about the angular? where he goes in this story?
 
@@ -321,13 +321,13 @@ Well now it's very easy , just create the angular service separately, then retur
 })();
 ```
 
-<img src="http://i.imgur.com/TUB57Xl.png">
+<img src="https://i.imgur.com/TUB57Xl.png">
 
 <br />
 
 Working sample.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/64/embedded/result,js,html/light/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/st1s/8an2hwyn/64/embedded/result,js,html/light/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
@@ -336,7 +336,7 @@ I hope to have clarified a little bit about unit testing and that this helps in 
 
 Cya [=
 
-Repository of this post in Github: https://github.com/stewones/angular-mocha-service-tdd
+Repository of this post in Github: https://github.com/st1s/angular-mocha-service-tdd
 
 
-- [Versão em português](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd-pt.html)
+- [Versão em português](https://st1s.io/angularjs/mocha/2016/01/22/angular-mocha-service-tdd-pt.html)

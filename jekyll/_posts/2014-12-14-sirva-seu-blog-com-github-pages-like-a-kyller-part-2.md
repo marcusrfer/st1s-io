@@ -77,10 +77,10 @@ Jekyll irá esperar de você o seguinte:
 
 **assets** - Esta pasta não faz parte da estrutura padrão do Jekyll, mas será servida normalmente como qualquer outra pasta.
 
-Saiba mais sobre a usabilidade do Jekyll [aqui](http://jekyllrb.com/docs/usage/)
+Saiba mais sobre a usabilidade do Jekyll [aqui](https://jekyllrb.com/docs/usage/)
 
 # Configurações do Jekyll
 
-Jekyll suporta algumas configurações, como descrito na documentação [aqui](http://jekyllrb.com/docs/configuration/)
+Jekyll suporta algumas configurações, como descrito na documentação [aqui](https://jekyllrb.com/docs/configuration/)
 
-Continuação - [parte 1](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html) / [parte 3](https://stpa.co/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)
+Continuação - [parte 1](https://st1s.io/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html) / [parte 3](https://st1s.io/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)
