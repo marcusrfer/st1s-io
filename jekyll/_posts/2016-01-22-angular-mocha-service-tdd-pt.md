@@ -307,7 +307,7 @@ mocha commission.spec.js
 
 <img src="https://i.imgur.com/v02PyUf.png">
 
-####Tá bom st1s, mas e o angular? aonde o danado entra nesta história?
+#### Tá bom st1s, mas e o angular? aonde o danado entra nesta história?
 
 Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a classe que está anexada ao objeto window, e seja feliz.
 
@@ -336,7 +336,7 @@ Espero ter ajudado de alguma forma e ter esclarecido um pouco sobre testes unit�
 
 Cya [=
 
-Repositório deste post no Github: https://github.com/st1s/angular-mocha-service-tdd
+Repositório deste post no Github: [github.com/st1s/angular-mocha-service-tdd](https://github.com/st1s/angular-mocha-service-tdd)
 
 
 - [English version](https://st1s.io/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
