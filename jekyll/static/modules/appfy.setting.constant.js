@@ -4,8 +4,8 @@ angular.module("st1s-io").constant("setting", {
         "about": [
             "Hi!",
             "my name is Stewan",
-            "but some people call me ' ist one s ' ...",
-            "do not ask me why O.o",
+            "but some people",
+            "call me ' ist one s '",
             "I like to code",
             "design",
             "user experience",
