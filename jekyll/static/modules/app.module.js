@@ -27,6 +27,19 @@
                 }
             }, 0);
         })
+        .directive('delay', function ($rootScope, $timeout) {
+            return {
+                scope: {
+                    timeout: '='
+                },
+                link: function ($scope, $elem, $attr) {
+                    var elem = $($elem);
+                    $timeout(function () {
+                        elem.removeClass('ng-hide');
+                    }, $scope.timeout || 1000);
+                }
+            }
+        })
         .directive('changeLogo', function ($rootScope, $timeout) {
             return {
                 scope: {
