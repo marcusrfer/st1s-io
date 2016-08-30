@@ -20,6 +20,7 @@ angular.module("st1s-io").constant("setting", {
             "I'm currently",
             "hard working with",
             "angular",
+            "ionic",
             "node",
             "html5",
             "css",
@@ -30,9 +31,8 @@ angular.module("st1s-io").constant("setting", {
             "and s2 javascript",
             "Thanks for reading",
             "if you liked",
-            "follow me",
-            "and keep up to date",
-            "(#"
+            "just follow me",
+            "Cya.. (#"
         ]
     }
 });
