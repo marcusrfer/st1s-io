@@ -1,0 +1,60 @@
+<section class="hero case is-warning is-medium">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns">
+                <div class="column has-text-centered v-center">
+                    <img src="/static/images/firetask.svg" alt="Firetask">
+                </div>
+                <div class="column info">
+                    <h1 class="title is-2">I wrote Firetask</h1>
+                    <h2 class="subtitle is-4">
+                        An Ionic 2 and Firebase 3 full aplication with offline support
+                    </h2>
+                    <a class="" href="https://play.google.com/store/apps/details?id=io.firetask"><img style="width: 120px" src="/static/images/googleplay.png" alt="Available on Google Play"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+
+    </div>
+    <style>
+        .hero.case img {
+            width: 215px;
+        }
+        
+        .hero.case .subtitle {
+            line-height: 23px;
+            font-size: 17px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero.case .column.info {
+                text-align: center
+            }
+            .hero.case .v-center {
+                height: auto !important;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hero.case .column.info {
+                padding-top: 57px;
+            }
+        }
+        
+        .hero.case .v-center {
+            height: 195px;
+        }
+    </style>
+</section>

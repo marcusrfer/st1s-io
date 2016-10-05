@@ -8,11 +8,17 @@
 
 <body ng-controller="$AppCtrl as $app">
 	{% if page.url == "/" %}
-	    {% include hero.typing.html %}
-	    <down-arrow place="'.card-list'"></down-arrow>
+	{% include hero.typing.html %}
+	<down-arrow place="'.card-list'"></down-arrow>
+
+	{% include case.angular-morris.html %}
+	{% include case.appfy.html %}
+	{% include case.firetask.html %}	
+	{% include case.rivas.html %}
+
 	{% endif %}
 
-    {{ content }}
+    {{ content }}	
 
 	{% if page.url != "/" %}
 	    {% include footer.html %}
