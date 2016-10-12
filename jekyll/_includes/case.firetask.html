@@ -9,18 +9,30 @@
         <div class="container ">
             <div class="columns">
                 <div class="column has-text-centered v-center">
-                    <img src="/static/images/firetask.svg" alt="Firetask">
+                    <a href="https://firetask.io">
+                        <img src="/static/images/firetask.svg" alt="Firetask">
+                    </a>
                 </div>
                 <div class="column info">
-                    <h1 class="title is-2">I wrote Firetask</h1>
+                    <h1 class="title is-2">I wrote <a class="underline" href="https://firetask.io">Firetask</a></h1>
                     <h2 class="subtitle is-4">
-                        An Ionic 2 and Firebase 3 full aplication with offline support
+                        An Ionic2 / Firebase full aplication with offline support and others
                     </h2>
-                    <a class="" href="https://play.google.com/store/apps/details?id=io.firetask"><img style="width: 120px" src="/static/images/googleplay.png" alt="Available on Google Play"></a>
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column" style="max-width: 206px;">
+                            <small style="margin: 0 0 7px 6px; display: block">test from</small>
+                            <a href="https://play.google.com/store/apps/details?id=io.firetask"><img class="android" alt="Firetask is available for Android on Google Play" title="Firetask is available for Android on Google Play" src="/static/images/googleplay.png"></a>
+
+                        </div>
+                        <div class="column">
+                            <div>
+                                <small style="margin: 0 0 5px 6px; display: block">buy on</small>
+                                <a href="https://codecanyon.net/item/firetask-ionic-2-and-firebase-3-full-application/18223835"><img class="canyon" alt="Firetask will soon available on CodeCanyon" title="Firetask will soon available on CodeCanyon" src="/static/images/codecanyon.png"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 
@@ -36,6 +48,7 @@
         .hero.case .subtitle {
             line-height: 23px;
             font-size: 17px;
+            margin-top: 0;
         }
         
         @media (max-width: 768px) {
@@ -55,6 +68,23 @@
         
         .hero.case .v-center {
             height: 195px;
+        }
+        
+        .hero.case img.android,
+        .hero.case img.canyon {
+            width: 185px;
+        }
+        
+        .hero.case img.canyon {
+            border-radius: 17px;
+        }
+        
+        .hero.case a.underline {
+            border-bottom: 1px solid;
+        }
+        
+        .hero.case a:hover {
+            font-weight: bold;
         }
     </style>
 </section>
