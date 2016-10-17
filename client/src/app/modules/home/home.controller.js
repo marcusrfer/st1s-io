@@ -1,12 +1,12 @@
-(function () {
+(function() {
     'use strict';
     /**
-    * @ngdoc object
-    * @name home.controller:HomeCtrl
-    * @requires appfy.page.factory:$page
-    * @requires setting
-    **/
-    angular.module('home').controller('HomeCtrl', /*@ngInject*/ function ($page, $state, setting) {
+     * @ngdoc object
+     * @name home.controller:HomeCtrl
+     * @requires appfy.page.factory:$page
+     * @requires setting
+     **/
+    angular.module('home').controller('HomeCtrl', /*@ngInject*/ function($page, $state, setting) {
         var vm = this;
         /**
          *
@@ -21,7 +21,8 @@
                 github: setting.github,
                 google: setting.google,
                 twitter: setting.twitter,
-                facebook: setting.facebook
+                facebook: setting.facebook,
+                live: setting.live
             }
         }
     });

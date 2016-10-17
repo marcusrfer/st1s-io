@@ -35,7 +35,6 @@
      **/
     angular.module('appfy.module', [
         'home',
-        'st.1.s.present',
         'st.1.s.present'
     ]);
 })();

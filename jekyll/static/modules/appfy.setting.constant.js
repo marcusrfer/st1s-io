@@ -4,17 +4,16 @@ angular.module("st1s-io").constant("setting", {
         "about": [
             "Hi!",
             "my name is Stewan",
-            "I'm from Brazil",
-            "fullstack engineer",
-            "exclusive author for Envato CodeCanyon",
-            "and freelancer",
+            "I'm fullstack developer",
+            "from Brazil",
+            "exclusive author for CodeCanyon.net",
+            "broadcaster at LiveCoding.tv",
+            "freelancer",
             "currently working with",
             "angular 2",
             "ionic 2",
             "and firebase",
-            "if you need some help",
-            "just contact me",
-            "Thank you (3 ..."
+            "thanks for your visit >_<"
             // "Hi!",
             // "my name is Stewan",
             // "but some people",
