@@ -1,0 +1,40 @@
+{% include hero.categories.html post=page %}
+
+<section class="section content">
+    <div class="container card-list">
+        {% for tag in site.categories %}
+        <h2 class="subtitle is-2" id="{{ tag[0] }}">{{ tag[0] | capitalize }} <span class="tag is-danger is-small">{{ tag[1].size }}</span></h2>
+        <br />
+        <div class="columns is-mobile is-multiline">
+            {% assign pages_list = tag[1] %} {% for post in pages_list %} {% if post.title != null %} {% if group == null
+            or group == post.group %}
+            <div class="column post">
+                <a href="{{ site.url }}{{ post.url }}">
+                {% include card.html post=post %}
+                </a>
+            </div>
+            {% endif %} {% endif %} {% endfor %}
+        </div>
+        <br /> <br /> {% endfor %}
+    </div>
+</section>
+
+
+<!--
+
+
+{% for tag in site.categories %}
+  <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+  <ul class="post-list">
+  {% assign pages_list = tag[1] | sort: 'date' %}
+  {% for post in pages_list %}
+    {% if post.title != null %}
+      {% if group == null or group == post.group %}
+        <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}{% if post.subtitle %} (<div class="subtitle">{{ post.subtitle }}</div>){% endif %}<span class="entry-date"><time style="display: none;" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%d %b, %Y" | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time></a></li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% assign pages_list = nil %}
+  {% assign group = nil %}
+  </ul>
+{% endfor %}-->

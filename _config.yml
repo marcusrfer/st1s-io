@@ -1,0 +1,56 @@
+# Welcome to Jekyll!
+
+title: st1s --fullstack --developer
+email: hi@st1s.io
+description: > 
+  Javascript Full-stack Developer, Envato CodeCanyon exclusive author, LiveCoding.tv broadcaster. I like to work with Angular, Node, Ionic, Firebase, Mongo.db, Html5, CSS, and all involving open source culture.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://st1s.io" # the base hostname & protocol for your site
+#url: "http://localhost:4000" # the base hostname & protocol for your site
+disqus: 'st1s'
+logo: "https://i.imgur.com/W2tYHtr.png"
+
+# Social
+github: "https://github.com/st1s"
+google: "https://plus.google.com/+StewanPacheco"
+facebook: "https://facebook.com/StewanPacheco"
+twitter:  "https://twitter.com/StewanPacheco"
+live:  "https://www.livecoding.tv/st1s/videos"
+            
+# Build settings
+markdown: kramdown
+theme: minima
+
+paginate: 8
+
+gems:
+  - jekyll-paginate
+
+colors:
+  - category: "angularjs"
+    colorClass: "is-danger"
+    name: "angular.js"
+    
+  - category: "node"
+    colorClass: "is-success"
+    name: "node.js"
+
+  - category: "howto"
+    colorClass: "is-warning is-bold"
+    name: "how-to"
+
+  - category: "community"
+    colorClass: "is-info"
+    name: "community"
+
+  - category: "test"
+    colorClass: "is-primary"
+    name: "unit test"
+
+  - category: "github"
+    colorClass: "is-dark"
+    name: "github"
+
+  - category: "javascript"
+    colorClass: "is-warning"
+    name: "Javascript"

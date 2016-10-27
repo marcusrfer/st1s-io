@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="st1s-io">
+	{% if page.url != "/" %}
+	    {% include head.html %}
+	{% else %}
+		{% include head.index.html %}
+	{% endif %}
+
+<body ng-controller="$AppCtrl as $app">
+	{% if page.url == "/" %}
+	{% include hero.typing.html %}
+	<down-arrow place="'.card-list'"></down-arrow>
+
+	{% include case.angular-morris.html %}
+	{% include case.appfy.html %}
+	{% include case.firetask.html %}	
+	{% include case.rivas.html %}
+
+	{% endif %}
+
+    {{ content }}	
+
+	{% if page.url != "/" %}
+	    {% include footer.html %}
+	{% else %}
+		{% include footer.index.html %}
+	{% endif %}
+</body>
+</html>

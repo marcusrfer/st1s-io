@@ -1,0 +1,50 @@
+//just to stop errors
+angular.module("st1s-io").constant("setting", {
+    "st1s": {
+        "about": [
+            "Hi!",
+            "my name is Stewan",
+            "I'm fullstack developer",
+            "from Brazil",
+            "exclusive author for CodeCanyon.net",
+            "broadcaster at LiveCoding.tv",
+            "freelancer",
+            "currently working with",
+            "angular 2",
+            "ionic 2",
+            "and firebase",
+            "thanks for your visit >_<"
+            // "Hi!",
+            // "my name is Stewan",
+            // "but some people",
+            // "call me ' ist one s '",
+            // "I like to code",
+            // "design",
+            // "user experience",
+            // "think differently",
+            // "build incredible things",
+            // "coffee",
+            // "solve problems",
+            // "coffee",
+            // "automate tasks",
+            // "did i say coffee?",
+            // "...",
+            // "I'm currently",
+            // "hard working with",
+            // "angular",
+            // "ionic",
+            // "node",
+            // "html5",
+            // "css",
+            // "firebase",
+            // "mongo.db",
+            // "all involving",
+            // "open source culture",
+            // "and s2 javascript",
+            // "Thanks for reading",
+            // "if you liked",
+            // "just follow me",
+            // "Cya.. (#"
+        ]
+    }
+});

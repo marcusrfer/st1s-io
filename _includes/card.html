@@ -1,0 +1,117 @@
+<div class="card">
+    <div class="card-image">
+        <figure class="image">
+            {% if include.post.image %}
+            <div class="picture" style="background-image: url({{ include.post.image }})"></div>
+            <img class="is-hidden" src="{{ include.post.image }}" alt="">
+            {% else %}           
+            <div class="picture" style="background-image: url(/static/images/st1s-logo-light.svg); background-size: contain;"></div>
+            {% endif %}          
+        </figure>
+    </div>
+    <div class="card-content {% include color.html category=include.post.category %} is-outlined">
+        <div class="media">
+            <div class="media-content">
+                <p class="title is-3">{{ include.post.title }}</p>
+                <p class="subtitle is-6">{{ include.post.subtitle }}</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="desc">
+                {{ include.post.description | strip_html | truncatewords: 20 }}
+            </div>
+            <p>
+                <small class="pull-left">{{ include.post.date | date: "%b %-d, %Y"}}</small>
+                <small class="pull-right">{% include color.category.html category=include.post.category %}</small>
+            </p>
+            <br />
+        </div>
+    </div>
+    <style>
+        .card {
+            max-width: 280px;
+            max-height: 495px;
+        }
+        
+        .card .card-content {
+            border-left: 3px solid #eee;
+        }
+        
+        .card .card-content .title + .subtitle {
+            margin-top: 0;
+        }
+        
+        .card .card-content .desc {
+            color: #69707a;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 12px;
+            padding-bottom: 16px;
+        }
+        
+        .card .picture {
+            height: 150px;
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .card .is-white.is-outlined {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+        }
+        
+        .card .is-black.is-outlined {
+            background-color: transparent;
+            border-color: #111;
+            color: #111;
+        }
+        
+        .card .is-light.is-outlined {
+            background-color: transparent;
+            border-color: #f5f7fa;
+            color: #f5f7fa;
+        }
+        
+        .card .is-dark.is-outlined {
+            background-color: transparent;
+            border-color: #69707a;
+            color: #69707a;
+        }
+        
+        .card .is-primary.is-outlined {
+            background-color: transparent;
+            border-color: #1fc8db;
+            color: #1fc8db;
+        }
+        
+        .card .is-info.is-outlined {
+            background-color: transparent;
+            border-color: #42afe3;
+            color: #42afe3;
+        }
+        
+        .card .is-success.is-outlined {
+            background-color: transparent;
+            border-color: #97cd76;
+            color: #97cd76;
+        }
+        
+        .card .is-warning.is-outlined {
+            background-color: transparent;
+            border-color: #fce473;
+            color: #fce473;
+        }
+        
+        .card .is-danger.is-outlined {
+            background-color: transparent;
+            border-color: #ed6c63;
+            color: #ed6c63;
+        }
+        
+        .card .is-outlined:hover,
+        .card .is-outlined:focus {
+            opacity: .7
+        }
+    </style>
+</div>

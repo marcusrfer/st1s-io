@@ -1,0 +1,91 @@
+<section class="hero case is-warning is-medium">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns">
+                <div class="column has-text-centered v-center">
+                    <a href="https://firetask.io">
+                        <img src="/static/images/firetask.svg" alt="Firetask">
+                    </a>
+                </div>
+                <div class="column info">
+                    <h1 class="title is-2">I wrote <a class="underline" href="https://firetask.io">Firetask</a></h1>
+                    <h2 class="subtitle is-4">
+                        An Ionic2 / Firebase full demo application with offline support and more
+                    </h2>
+                    <div class="columns is-mobile is-multiline" style="max-width: 418px;">
+                        <div class="column">
+                            <small style="margin: 0 0 7px 6px; display: block">test from</small>
+                            <a href="https://play.google.com/store/apps/details?id=io.firetask"><img class="android" alt="Firetask is available for Android on Google Play" title="Firetask is available for Android on Google Play" src="/static/images/googleplay.png"></a>
+
+                        </div>
+                        <div class="column">
+                            <div>
+                                <small style="margin: 0 0 5px 6px; display: block">buy on</small>
+                                <a href="https://codecanyon.net/item/firetask-ionic-2-and-firebase-3-full-application/18223835"><img class="canyon" alt="Firetask is available on CodeCanyon" title="Firetask will soon available on CodeCanyon" src="/static/images/codecanyon.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+
+    </div>
+    <style>
+        .hero.case img {
+            width: 215px;
+        }
+        
+        .hero.case .subtitle {
+            line-height: 23px;
+            font-size: 17px;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero.case .column.info {
+                text-align: center;
+                max-width: auto !important;
+            }
+            .hero.case .v-center {
+                height: auto !important;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hero.case .column.info {
+                padding-top: 57px;
+            }
+        }
+        
+        .hero.case .v-center {
+            height: 195px;
+        }
+        
+        .hero.case img.android,
+        .hero.case img.canyon {
+            width: 185px;
+        }
+        
+        .hero.case img.canyon {
+            border-radius: 17px;
+        }
+        
+        .hero.case a.underline {
+            border-bottom: 1px solid;
+        }
+        
+        .hero.case a:hover {
+            font-weight: bold;
+        }
+    </style>
+</section>

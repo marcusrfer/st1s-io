@@ -1,0 +1,32 @@
+{% if page.url != "/" %}
+<section class="hero is-medium is-warning is-bold">
+    <div class="hero-head">
+        {% include nav.html logo='st1s-logo-h-green.svg' %}
+    </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container ">
+            <h1 class="title is-2">Latest</h1>
+            <h2 class="subtitle is-4">
+                Posts
+            </h2>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section class="section">
+    <div class="container card-list">
+        <br /> <br /><br />
+        <div class="columns is-mobile is-multiline">
+            {% for post in paginator.posts %}
+            <div class="column post">
+                <a href="{{ site.url }}{{ post.url }}">
+                {% include card.html post=post %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <br /> <br /><br />
+    </div>
+</section>

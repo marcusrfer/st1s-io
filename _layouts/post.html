@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="st1s-io">
+	{% if page.url != "/" %}
+	    {% include head.html %}
+	{% else %}
+		{% include head.index.html %}
+	{% endif %}
+<body ng-controller="$AppCtrl as $app">
+    {% include hero.post.html post=page %}
+   
+    <section class="section post-content markdown-body">
+        {{ content }}
+    </section>
+
+
+	<social-share section-class="'is-primary'" url="'{{page.url | prepend:site.url}}'" media="'{% include media.share.html %}'" text="'{{ page.title }}'"></social-share>
+	
+	{% include other.posts.html %}
+	{% include hero.disqus.html %}
+
+	{% if page.url != "/" %}
+	    {% include footer.html %}
+	{% else %}
+		{% include footer.index.html %}
+	{% endif %}
+</body>
+</html>

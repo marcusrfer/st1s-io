@@ -1,0 +1,2 @@
+{% assign colorClass = 'is-primary is-bold' %}{% for color in site.colors %}{% if include.category == color.category %}{%
+assign colorClass = color.colorClass %}{% endif %}{% endfor %}{{ colorClass }}

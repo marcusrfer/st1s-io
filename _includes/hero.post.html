@@ -1,0 +1,30 @@
+<section class="hero-post hero is-medium {% include color.html category=include.post.category %}">
+    <div class="hero-head">
+        {% include nav.html logo='st1s-logo-h-silver.svg' %}
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                <a title="back" class="home" href="#" onClick="history.back(-1)"><i class="fa fa-backward"></i></a> {{ include.post.title
+                }}
+            </h1>
+            <h2 class="subtitle">
+                {{ include.post.subtitle }}
+            </h2>
+        </div>
+    </div>
+    <style>
+        .hero-post a.home {
+            opacity: .4;
+            font-size: 22px;
+            margin: 0px 0px 16px 0;
+            display: block;
+        }
+        
+        .hero-post a.home:hover {
+            opacity: 1;
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+</section>
